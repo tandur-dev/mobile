@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tandur</string>
+
+    <string name="facebook_app_id">589060428764930</string>
+    <string name="fb_login_protocol_scheme">fb589060428764930</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">589060428764930</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb589060428764930</string>
 </resources>

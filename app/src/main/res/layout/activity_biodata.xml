@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.signup.BiodataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Sign Up"
+            android:textColor="#7CBD1E"
+            android:textSize="24sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageViewProfil"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"
+            android:src="@drawable/ic_no_image_square"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="Email"
+            android:textColor="#828282"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusTopStart="6dp"
+            app:hintEnabled="true"
+            app:startIconTint="#828282">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusTopStart="6dp"
+            app:hintEnabled="true"
+            app:startIconTint="#828282">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextNoTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:hint="No Telepon"
+                android:inputType="phone"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusTopStart="6dp"
+            app:hintEnabled="true"
+            app:startIconTint="#828282">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:hint="Alamat"
+                android:inputType="textPostalAddress"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            app:boxCornerRadiusBottomEnd="6dp"-->
+<!--            app:boxCornerRadiusBottomStart="6dp"-->
+<!--            app:boxCornerRadiusTopEnd="6dp"-->
+<!--            app:boxCornerRadiusTopStart="6dp"-->
+<!--            app:hintEnabled="true"-->
+<!--            app:startIconTint="#828282">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/autoCompleteTextViewProvinsi"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/open_sans_regular"-->
+<!--                android:hint="Provinsi"-->
+<!--                android:inputType="none"-->
+<!--                android:textColor="#333333"-->
+<!--                android:textSize="14sp" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            app:boxCornerRadiusBottomEnd="6dp"-->
+<!--            app:boxCornerRadiusBottomStart="6dp"-->
+<!--            app:boxCornerRadiusTopEnd="6dp"-->
+<!--            app:boxCornerRadiusTopStart="6dp"-->
+<!--            app:hintEnabled="true"-->
+<!--            app:startIconTint="#828282">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/autoCompleteTextViewKotaKabupaten"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/open_sans_regular"-->
+<!--                android:hint="Kota / Kabupaten"-->
+<!--                android:inputType="none"-->
+<!--                android:textColor="#333333"-->
+<!--                android:textSize="14sp" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            app:boxCornerRadiusBottomEnd="6dp"-->
+<!--            app:boxCornerRadiusBottomStart="6dp"-->
+<!--            app:boxCornerRadiusTopEnd="6dp"-->
+<!--            app:boxCornerRadiusTopStart="6dp"-->
+<!--            app:hintEnabled="true"-->
+<!--            app:startIconTint="#828282">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/autoCompleteTextViewKecamatan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/open_sans_regular"-->
+<!--                android:hint="Kecamatan"-->
+<!--                android:inputType="none"-->
+<!--                android:textColor="#333333"-->
+<!--                android:textSize="14sp" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Provinsi"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:spinnerMode="dialog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Kota / Kabupaten"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerKotaKabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:spinnerMode="dialog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Kecamatan"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:spinnerMode="dialog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Kelurahan"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerKelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:spinnerMode="dialog"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButtonSelanjutnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="42dp"
+            android:backgroundTint="#7CBD1E"
+            android:text="Selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="#FCF9F9"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

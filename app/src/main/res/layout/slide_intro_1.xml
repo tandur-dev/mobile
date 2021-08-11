@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_background_slide_intro_1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_logo_slide_intro_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Cari Lahan Yang Cocok\nUntuk Berkebun"
+            android:textColor="#7CBD1E"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
