@@ -1,4 +1,4 @@
-package com.example.tandur.ui.profile;
+package com.android.tandur.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.tandur.databinding.FragmentProfileBinding;
+import com.android.tandur.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
 

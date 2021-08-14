@@ -1,4 +1,4 @@
-package com.example.tandur.ui.favorite;
+package com.android.tandur.ui.favorite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.tandur.databinding.FragmentFavoriteBinding;
+import com.android.tandur.databinding.FragmentFavoriteBinding;
+import com.android.tandur.ui.favorite.FavoriteViewModel;
 
 public class FavoriteFragment extends Fragment {
 

@@ -1,16 +1,16 @@
-package com.example.tandur.ui.favorite;
+package com.android.tandur.ui.transaction;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class FavoriteViewModel extends ViewModel {
+public class TransactionViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public FavoriteViewModel() {
+    public TransactionViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is notifications fragment");
     }
 
     public LiveData<String> getText() {
