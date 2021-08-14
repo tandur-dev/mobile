@@ -8,4 +8,6 @@
     <color name="gray_5">#E0E0E0</color>
     <color name="tani_black">#4A4A4A</color>
     <color name="tani_white">#FCF9F9</color>
+    <color name="tani_yellow">#F8E064</color>
+    <color name="fav_gray">#F4F4F4</color>
 </resources>

@@ -11,4 +11,15 @@
     <string name="pasar_tandur">Pasar Tandur</string>
     <string name="belajar_tandur">Belajar Tandur</string>
     <string name="lahan_urban">Lahan Urban Farming Disekitar Anda</string>
+    <string name="barang_tandur">Barang Tandur Market Untuk Anda</string>
+    <string name="lihat">Lihat Semua</string>
+    <string name="placeholder_nama">placeholder</string>
+    <string name="currency">Rp </string>
+    <string name="satuan_bulan">/Bln</string>
+    <string name="luas">Luas </string>
+    <string name="x"> x </string>
+    <string name="meter"> meter</string>
+    <string name="placeholder_angka">1</string>
+    <string name="fasilitas">Fasilitas : </string>
+    <string name="placeholder_fasilitas">irigasi, Listrik, Peralatan</string>
 </resources>

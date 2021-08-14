@@ -8,4 +8,8 @@
             #7CBD1E
         </item>
     </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/tani_yellow</item>
+        <item name="colorControlActivated">@color/tanigray_2</item>
+    </style>
 </resources>

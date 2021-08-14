@@ -13,6 +13,11 @@
         <entry key="..\:/Work/Tandur2/app/src/main/res/layout/fragment_transaction.xml" value="0.16770833333333332" />
         <entry key="..\:/Work/Tandur2/app/src/main/res/layout/home_top.xml" value="0.3333333333333333" />
         <entry key="..\:/Work/Tandur2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16770833333333332" />
+        <entry key="..\:/Work/tandur/app/mobile/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.18385416666666668" />
+        <entry key="..\:/Work/tandur/app/mobile/app/src/main/res/drawable/rating_bar_selector.xml" value="0.18385416666666668" />
+        <entry key="..\:/Work/tandur/app/mobile/app/src/main/res/layout/fragment_home.xml" value="0.16259057971014493" />
+        <entry key="..\:/Work/tandur/app/mobile/app/src/main/res/layout/item_card.xml" value="0.5" />
+        <entry key="..\:/Work/tandur/app/mobile/app/src/main/res/layout/list_item.xml" value="0.16259057971014493" />
       </map>
     </option>
   </component>

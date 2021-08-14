@@ -258,7 +258,39 @@
             android:layout_height="wrap_content"></FrameLayout>
 
         <Button
+            android:id="@+id/lihatsemua_lahan"
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Button>
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tani_white"
+            android:textColor="@color/tani_black"
+            android:textStyle="bold"
+            android:text="@string/lihat"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="14dp"
+            android:lineHeight="14dp"
+            android:textStyle="bold"
+            android:text="@string/barang_tandur"
+            android:textColor="@color/tani_black"></TextView>
+
+        <FrameLayout
+            android:id="@+id/container_barangtandur"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+        <Button
+            android:id="@+id/lihatsemua_barangtandur"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tani_white"
+            android:textColor="@color/tani_black"
+            android:textStyle="bold"
+            android:text="@string/lihat"></Button>
 
 </LinearLayout>
