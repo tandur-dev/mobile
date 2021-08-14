@@ -1,16 +1,16 @@
-package com.android.tandur.ui.favorite;
+package com.android.tandur.bottom_navigation.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class FavoriteViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public FavoriteViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

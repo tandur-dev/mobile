@@ -1,14 +1,14 @@
-package com.android.tandur.ui.transaction;
+package com.android.tandur.bottom_navigation.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class TransactionViewModel extends ViewModel {
+public class ProfileViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public TransactionViewModel() {
+    public ProfileViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
     }

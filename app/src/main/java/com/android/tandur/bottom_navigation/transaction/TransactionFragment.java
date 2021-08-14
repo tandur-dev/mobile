@@ -1,4 +1,4 @@
-package com.android.tandur.ui.favorite;
+package com.android.tandur.bottom_navigation.transaction;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.android.tandur.databinding.FragmentFavoriteBinding;
-import com.android.tandur.ui.favorite.FavoriteViewModel;
+import com.example.tandur.databinding.FragmentTransactionBinding;
 
-public class FavoriteFragment extends Fragment {
+public class TransactionFragment extends Fragment {
 
-    private FavoriteViewModel favoriteViewModel;
-    private FragmentFavoriteBinding binding;
+    private TransactionViewModel transactionViewModel;
+    private FragmentTransactionBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        favoriteViewModel =
-                new ViewModelProvider(this).get(FavoriteViewModel.class);
+        transactionViewModel =
+                new ViewModelProvider(this).get(TransactionViewModel.class);
 
-        binding = FragmentFavoriteBinding.inflate(inflater, container, false);
+        binding = FragmentTransactionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textFavorite;
-        favoriteViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textTransaction;
+        transactionViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

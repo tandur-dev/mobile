@@ -1,4 +1,4 @@
-package com.android.tandur.ui.home;
+package com.android.tandur.bottom_navigation.favorite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.android.tandur.R;
-import com.android.tandur.databinding.FragmentHomeBinding;
+import com.example.tandur.databinding.FragmentFavoriteBinding;
 
-public class HomeFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-    private FragmentHomeBinding binding;
+    private FavoriteViewModel favoriteViewModel;
+    private FragmentFavoriteBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        favoriteViewModel =
+                new ViewModelProvider(this).get(FavoriteViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentFavoriteBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textFavorite;
+        favoriteViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
