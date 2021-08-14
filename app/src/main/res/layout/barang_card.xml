@@ -56,7 +56,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/nama_lahan"
+                    android:id="@+id/nama_barang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -84,7 +84,7 @@
                         android:textColor="@color/tani_black"
                         android:text="@string/currency"></TextView>
                     <TextView
-                        android:id="@+id/harga_lahan"
+                        android:id="@+id/harga_barang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="12dp"
@@ -102,13 +102,14 @@
                     android:layout_marginTop="9dp"
                     android:orientation="horizontal">
                     <RatingBar
+                        android:id="@+id/ratingBarang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:theme="@style/RatingBar"
                         style="?android:attr/ratingBarStyleSmall"></RatingBar>
 
                     <TextView
-                        android:id="@+id/txtRating"
+                        android:id="@+id/txtRatingBarang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="9dp"
@@ -134,7 +135,7 @@
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/location"></ImageView>
                     <TextView
-                        android:id="@+id/location"
+                        android:id="@+id/locationBarang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
