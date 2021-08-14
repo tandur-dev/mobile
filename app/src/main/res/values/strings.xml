@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Tandur</string>
-    <string name="home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_transaction">Transaction</string>
+    <string name="title_profile">Profile</string>
+    <string name="home_tandur">TANDUR</string>
+    <string name="home_tandurdesc">TANI KOLABORASI</string>
+    <string name="greeting">Haloo, </string>
+    <string name="urban_farming">Urban Farming</string>
+    <string name="pasar_tandur">Pasar Tandur</string>
+    <string name="belajar_tandur">Belajar Tandur</string>
+    <string name="lahan_urban">Lahan Urban Farming Disekitar Anda</string>
 </resources>
