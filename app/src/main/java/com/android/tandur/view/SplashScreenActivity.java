@@ -60,7 +60,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 .setFacebookButtonId(R.id.materilaButtonFacebook)
                 .build();
 
-        toMainActivity();
+//        toMainActivity();
     }
 
     @Override
@@ -72,6 +72,12 @@ public class SplashScreenActivity extends AppCompatActivity {
             Log.e("emailResponse", response.getEmail());
             login(response.getEmail());
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        toMainActivity();
     }
 
     public void doSignIn() {
@@ -147,13 +153,16 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             if (AppPreference.getSlideIntro(this)) {
                 if (AppPreference.getUser(this) != null) {
-                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+//                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
                 } else {
                     doSignIn();
                 }
             } else {
                 startActivity(new Intent(SplashScreenActivity.this, AppIntroActivity.class));
-                finish();
+//                finish();
             }
 
         }, loadingTime);

@@ -4,6 +4,7 @@
     package="com.android.tandur">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tandur">
-        <activity android:name=".view.signup.KonfirmasiActivity"></activity>
+        <activity
+            android:name=".view.KonfirmasiSewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.DetailSewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.SewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.UrbanFarmingActivity"
+            android:exported="true" />
+        <activity android:name=".view.signup.KonfirmasiActivity" />
         <activity android:name=".view.signup.VerifikasiFotoActivity" />
         <activity android:name=".view.signup.BiodataActivity" />
         <activity android:name=".MainActivity" />

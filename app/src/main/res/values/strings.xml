@@ -6,4 +6,9 @@
     <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
     <string name="facebook_application_id" translatable="false">589060428764930</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb589060428764930</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmlybmFzcmV5aGFuIiwiYSI6ImNrMHJzaG42ZDA4aTkzbnRpcjB0YjIzbmUifQ.hmXaEPcuJ0azmjGm72aJ_w</string>
+
+    <string name="user_location_permission_explanation">EXPLANATION_HERE</string>
+
 </resources>

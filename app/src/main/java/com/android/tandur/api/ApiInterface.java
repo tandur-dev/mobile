@@ -1,8 +1,11 @@
 package com.android.tandur.api;
 
+import com.android.tandur.api.response.BaseResponse;
 import com.android.tandur.api.response.KecamatanResponse;
 import com.android.tandur.api.response.KelurahanRespone;
 import com.android.tandur.api.response.KotaKabupatenResponse;
+import com.android.tandur.api.response.LahanResponse;
+import com.android.tandur.api.response.LahanTerdekatResponse;
 import com.android.tandur.api.response.LoginResponse;
 import com.android.tandur.api.response.ProvinsiResponse;
 import com.android.tandur.api.response.RegisterResponse;
@@ -10,13 +13,16 @@ import com.android.tandur.api.response.RegisterResponse;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Headers;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
     @FormUrlEncoded
@@ -59,5 +65,33 @@ public interface ApiInterface {
     @GET("master/kelurahan/{idKecamatan}")
     Call<KelurahanRespone> getKelurahan(
             @Path("idKecamatan") String getKelurahan
+    );
+
+    @GET("lahan/terdekat")
+    Call<LahanTerdekatResponse> getLahanTerdekat(
+            @Query("lat") double latitude,
+            @Query("long") double longitude,
+            @Query("limit") int limit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("lahan")
+    Call<LahanResponse> postLahan(
+            @Body String body
+    );
+
+    @Multipart
+    @POST("lahan/foto")
+    Call<BaseResponse> postFotoLahan(
+            @Part("idLahan") RequestBody idLahan,
+            @Part MultipartBody.Part foto1,
+            @Part MultipartBody.Part foto2
+    );
+
+    @Multipart
+    @POST("lahan/foto")
+    Call<BaseResponse> postGaleriLahan(
+            @Part("idLahan") RequestBody idLahan,
+            @Part MultipartBody.Part file
     );
 }

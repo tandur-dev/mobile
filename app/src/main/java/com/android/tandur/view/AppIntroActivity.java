@@ -88,17 +88,17 @@ public class AppIntroActivity extends AppIntro {
     @Override
     protected void onSkipPressed(@Nullable Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
-        doSignIn();
+//        doSignIn();
         AppPreference.saveSlideIntro(this, true);
-//        finish();
+        finish();
     }
 
     @Override
     protected void onDonePressed(@Nullable Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        doSignIn();
+//        doSignIn();
         AppPreference.saveSlideIntro(this, true);
-//        finish();
+        finish();
     }
 
     @Override
@@ -145,7 +145,7 @@ public class AppIntroActivity extends AppIntro {
                         if (response.isSuccessful()) {
                             LoginResponse loginResponse = response.body();
                             if (loginResponse.status) {
-                                if (!loginResponse.data.isVerifUser.equalsIgnoreCase("0")) {
+                                if (loginResponse.data.isVerifUser.equalsIgnoreCase("0")) {
                                     AppPreference.saveUser(AppIntroActivity.this, loginResponse.data);
                                     startActivity(new Intent(AppIntroActivity.this, MainActivity.class));
                                 } else {

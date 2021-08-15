@@ -70,4 +70,7 @@ dependencies {
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2'
 }
