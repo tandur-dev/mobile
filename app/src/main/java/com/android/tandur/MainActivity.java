@@ -1,40 +1,37 @@
 package com.android.tandur;
 
-import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.MenuItem;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.view.MenuItem;
 
 import com.android.tandur.bottom_navigation.favorite.FavoriteFragment;
 import com.android.tandur.bottom_navigation.home.HomeFragment;
 import com.android.tandur.bottom_navigation.profile.ProfileFragment;
 import com.android.tandur.bottom_navigation.transaction.TransactionFragment;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.example.tandur.R;
+import com.android.tandur.databinding.ActivityMainBinding;
+import com.android.tandur.view.urban_farming.SewakanLahanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity{
-
-    private BottomNavigationView botnav;
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
+//    private BottomNavigationView botnav;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-
+        loadFragment(new HomeFragment());
         //bottom navigation
-        botnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        binding.bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment fragment;

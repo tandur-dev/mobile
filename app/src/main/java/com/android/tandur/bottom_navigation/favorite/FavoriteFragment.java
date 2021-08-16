@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.tandur.databinding.FragmentFavoriteBinding;
+import com.android.tandur.databinding.FragmentFavoriteBinding;
+
 
 public class FavoriteFragment extends Fragment {
 

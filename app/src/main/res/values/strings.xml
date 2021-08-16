@@ -11,6 +11,7 @@
 
     <string name="user_location_permission_explanation">EXPLANATION_HERE</string>
 
+
     <string name="title_home">Home</string>
     <string name="title_favorite">Favorite</string>
     <string name="title_transaction">Transaction</string>
