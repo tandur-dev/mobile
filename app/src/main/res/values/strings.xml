@@ -22,4 +22,16 @@
     <string name="placeholder_angka">1</string>
     <string name="fasilitas">Fasilitas : </string>
     <string name="placeholder_fasilitas">irigasi, Listrik, Peralatan</string>
+    <string name="rating_lahan">Rating Lahan</string>
+    <string name="lokasi_lahan">Lokasi Lahan</string>
+    <string name="pemilik_lahan">Pemilik Lahan</string>
+    <string name="online">Online </string>
+    <string name="yglalu"> menit yang lalu</string>
+    <string name="hubungi">Hubungi</string>
+    <string name="fasilitas_lahan">Fasilitas Lahan</string>
+    <string name="irigasi">Irigasi</string>
+    <string name="peralatan">Peralatan</string>
+    <string name="listrik">Listrik</string>
+    <string name="kanopi">Kanopi</string>
+    <string name="sewaskrg">Sewa Sekarang</string>
 </resources>

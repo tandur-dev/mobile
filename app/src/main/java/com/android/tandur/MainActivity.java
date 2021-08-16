@@ -34,11 +34,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.card1).setOnClickListener(this);
+        findViewById(R.id.card2).setOnClickListener(this);
+        findViewById(R.id.card3).setOnClickListener(this);
+        findViewById(R.id.card4).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.card1){
+        if(view.getId() == R.id.card1 || view.getId() == R.id.card2 || view.getId() == R.id.card3 || view.getId() == R.id.card4){
             Intent intent = new Intent(MainActivity.this, LahanActivity.class);
             startActivity(intent);
         }
@@ -85,7 +88,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 //            }
 //        });
 
-    }
+//    }
 
 //    //load fragment
 //    private void loadFragment(Fragment fragment){
