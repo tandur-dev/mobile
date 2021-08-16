@@ -1,18 +1,72 @@
 package com.android.tandur;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.view.MenuItem;
 
-import com.android.tandur.view.urban_farming.SewakanLahanActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.ViewDataBinding;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
-public class MainActivity extends AppCompatActivity {
+import com.android.tandur.bottom_navigation.favorite.FavoriteFragment;
+import com.android.tandur.bottom_navigation.home.HomeFragment;
+import com.android.tandur.bottom_navigation.profile.ProfileFragment;
+import com.android.tandur.bottom_navigation.transaction.TransactionFragment;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.example.tandur.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class MainActivity extends AppCompatActivity{
+
+    private BottomNavigationView botnav;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        startActivity(new Intent(this, SewakanLahanActivity.class));
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+
+
+        //bottom navigation
+        botnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment fragment;
+                switch (item.getItemId()){
+                    case R.id.navigation_home:
+                        fragment = new HomeFragment();
+                        loadFragment(fragment);
+                        return true;
+                    case R.id.navigation_favorite:
+                        fragment = new FavoriteFragment();
+                        loadFragment(fragment);
+                        return true;
+                    case R.id.navigation_transaction:
+                        fragment = new TransactionFragment();
+                        loadFragment(fragment);
+                        return true;
+                    case R.id.navigation_profile:
+                        fragment = new ProfileFragment();
+                        loadFragment(fragment);
+                        return true;
+                }
+                return false;
+            }
+        });
+
+    }
+
+    //load fragment
+    private void loadFragment(Fragment fragment){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

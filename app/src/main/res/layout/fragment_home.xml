@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/hometop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/home_tandur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22dp"
+                            android:lineHeight="20dp"
+                            android:text="@string/home_tandur"
+                            android:textColor="@color/tanigreen_2"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12dp"
+                            android:lineHeight="12dp"
+                            android:text="@string/home_tandurdesc"
+                            android:textColor="@color/tanigray_2"
+                            tools:ignore="MissingConstraints"></TextView>>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/handplant"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_tani"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingBottom="3dp"
+                            android:src="@drawable/handplant"
+                            android:tint="@color/tanigreen_2"
+                            tools:ignore="UseAppTint"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/cart"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/bg_cart"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/cart"></ImageView>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp">
+
+                                <ImageView
+                                    android:id="@+id/notif"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="@drawable/bg_notif"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:src="@drawable/notification"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/notification_ping"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="top|right"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:src="@drawable/notification_ping"></ImageView>
+                        </FrameLayout>
+                </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/linetopslider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@id/hometop"
+            android:src="@drawable/rectangle_top"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/greeting"
+            android:layout_below="@id/linetopslider"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:lineHeight="14dp"
+                    android:textColor="@color/tani_black"
+                    android:textStyle="bold"
+                    android:text="@string/greeting"></TextView>
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:lineHeight="14dp"
+                    android:textColor="@color/tani_black"
+                    android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/greeting"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/urban_farming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_urban"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:src="@drawable/plant"
+                            android:tint="@color/white"
+                            tools:ignore="UseAppTint"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/urban_farming"
+                            android:textSize="9dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pasar_tandur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_pasar"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/pasar"
+                            tools:ignore="UseAppTint"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pasar_tandur"
+                            android:textSize="9dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/belajar_tandur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_belajar"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/belajar"
+                            tools:ignore="UseAppTint"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/belajar_tandur"
+                            android:textSize="9dp"></TextView>
+                </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="14dp"
+            android:lineHeight="14dp"
+            android:textStyle="bold"
+            android:text="@string/lahan_urban"
+            android:textColor="@color/tani_black"></TextView>
+
+        <FrameLayout
+            android:id="@+id/container_lahanterdekat"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+        <Button
+            android:id="@+id/lihatsemua_lahan"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tani_white"
+            android:textColor="@color/tani_black"
+            android:textStyle="bold"
+            android:text="@string/lihat"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="14dp"
+            android:lineHeight="14dp"
+            android:textStyle="bold"
+            android:text="@string/barang_tandur"
+            android:textColor="@color/tani_black"></TextView>
+
+        <FrameLayout
+            android:id="@+id/container_barangtandur"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+        <Button
+            android:id="@+id/lihatsemua_barangtandur"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tani_white"
+            android:textColor="@color/tani_black"
+            android:textStyle="bold"
+            android:text="@string/lihat"></Button>
+
+</LinearLayout>
