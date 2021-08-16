@@ -11,27 +11,4 @@
 
     <string name="user_location_permission_explanation">EXPLANATION_HERE</string>
 
-
-    <string name="title_home">Home</string>
-    <string name="title_favorite">Favorite</string>
-    <string name="title_transaction">Transaction</string>
-    <string name="title_profile">Profile</string>
-    <string name="home_tandur">TANDUR</string>
-    <string name="home_tandurdesc">TANI KOLABORASI</string>
-    <string name="greeting">Haloo, </string>
-    <string name="urban_farming">Urban Farming</string>
-    <string name="pasar_tandur">Pasar Tandur</string>
-    <string name="belajar_tandur">Belajar Tandur</string>
-    <string name="lahan_urban">Lahan Urban Farming Disekitar Anda</string>
-    <string name="barang_tandur">Barang Tandur Market Untuk Anda</string>
-    <string name="lihat">Lihat Semua</string>
-    <string name="placeholder_nama">placeholder</string>
-    <string name="currency">Rp </string>
-    <string name="satuan_bulan">/Bln</string>
-    <string name="luas">Luas </string>
-    <string name="x"> x </string>
-    <string name="meter"> meter</string>
-    <string name="placeholder_angka">1</string>
-    <string name="fasilitas">Fasilitas : </string>
-    <string name="placeholder_fasilitas">irigasi, Listrik, Peralatan</string>
 </resources>

@@ -28,10 +28,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    viewBinding {
-        enabled = true
-    }
 }
 
 dependencies {
@@ -77,13 +73,4 @@ dependencies {
 
     //mapbox
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2'
-
-    //navbar
-//    implementation 'com.androidx.support:support-v4:28.0.0'
-//    implementation 'com.androidx.support:design:28.0.0'
-
-    //image slider
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.nineoldandroids:library:2.4.0'
-    implementation 'com.daimajia.slider:library:1.1.5@aar'
 }
