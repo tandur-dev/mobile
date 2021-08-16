@@ -10,12 +10,12 @@ import com.android.tandur.MainActivity;
 import com.android.tandur.R;
 import com.google.android.material.button.MaterialButton;
 
-public class KonfirmasiSewakanLahanActivity extends AppCompatActivity {
+public class KonfirmasiPembayaranActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_konfirmasi_sewakan_lahan);
+        setContentView(R.layout.activity_konfirmasi_pembayaran);
 
         MaterialButton materialButton = findViewById(R.id.materialButtonSelesai);
         materialButton.setOnClickListener(new View.OnClickListener() {

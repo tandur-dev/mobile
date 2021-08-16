@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.android.tandur.view.SewakanLahanActivity;
+import com.android.tandur.view.urban_farming.SewakanLahanActivity;
 
 public class MainActivity extends AppCompatActivity {
 

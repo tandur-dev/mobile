@@ -1,4 +1,4 @@
-package com.android.tandur.view;
+package com.android.tandur.view.urban_farming;
 
 import static com.mapbox.mapboxsdk.style.layers.Property.NONE;
 import static com.mapbox.mapboxsdk.style.layers.Property.VISIBLE;
@@ -43,14 +43,10 @@ import com.android.tandur.api.response.KecamatanResponse;
 import com.android.tandur.api.response.KelurahanRespone;
 import com.android.tandur.api.response.KotaKabupatenResponse;
 import com.android.tandur.api.response.ProvinsiResponse;
-import com.android.tandur.view.signup.BiodataActivity;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.mapbox.android.core.location.LocationEngine;
-import com.mapbox.android.core.location.LocationEngineProvider;
-import com.mapbox.android.core.location.LocationEngineRequest;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.geojson.Point;

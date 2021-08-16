@@ -1,4 +1,4 @@
-package com.android.tandur.view;
+package com.android.tandur.view.urban_farming;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,14 +25,11 @@ import com.android.tandur.api.ApiClient;
 import com.android.tandur.api.ApiInterface;
 import com.android.tandur.api.response.BaseResponse;
 import com.android.tandur.api.response.LahanResponse;
-import com.android.tandur.api.response.RegisterResponse;
 import com.android.tandur.model.LahanModel;
 import com.android.tandur.preference.AppPreference;
-import com.android.tandur.view.signup.BiodataActivity;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;

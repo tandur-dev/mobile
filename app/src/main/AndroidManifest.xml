@@ -14,16 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tandur">
         <activity
-            android:name=".view.KonfirmasiSewakanLahanActivity"
+            android:name=".view.KonfirmasiPembayaranActivity"
             android:exported="true" />
         <activity
-            android:name=".view.DetailSewakanLahanActivity"
+            android:name=".view.MetodePembayaranActivity"
             android:exported="true" />
         <activity
-            android:name=".view.SewakanLahanActivity"
+            android:name=".view.KonfirmOrderActivity"
             android:exported="true" />
         <activity
-            android:name=".view.UrbanFarmingActivity"
+            android:name=".view.urban_farming.KonfirmasiSewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.urban_farming.DetailSewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.urban_farming.SewakanLahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.urban_farming.UrbanFarmingActivity"
             android:exported="true" />
         <activity android:name=".view.signup.KonfirmasiActivity" />
         <activity android:name=".view.signup.VerifikasiFotoActivity" />
