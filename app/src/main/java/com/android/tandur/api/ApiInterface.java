@@ -1,6 +1,7 @@
 package com.android.tandur.api;
 
 import com.android.tandur.api.response.BaseResponse;
+import com.android.tandur.api.response.DetailLahanResponse;
 import com.android.tandur.api.response.KecamatanResponse;
 import com.android.tandur.api.response.KelurahanRespone;
 import com.android.tandur.api.response.KotaKabupatenResponse;
@@ -89,9 +90,24 @@ public interface ApiInterface {
     );
 
     @Multipart
-    @POST("lahan/foto")
+    @POST("lahan/galeri")
     Call<BaseResponse> postGaleriLahan(
             @Part("idLahan") RequestBody idLahan,
             @Part MultipartBody.Part file
+    );
+
+    @GET("lahan/{idLahan}")
+    Call<DetailLahanResponse> getDetailLahan(
+            @Path("idLahan") String idLahan
+    );
+
+    @FormUrlEncoded
+    @POST("urban-farming")
+    Call<BaseResponse> postUrbanFarming(
+            @Field("idLahan") String idLahan,
+            @Field("email") String email,
+            @Field("tgl") String tgl,
+            @Field("tglSelesai") String tglSelesai,
+            @Field("totBayar") String totBayar
     );
 }

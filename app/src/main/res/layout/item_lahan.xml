@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="16dp"
-    app:cardCornerRadius="6dp">
-    
-    <LinearLayout
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="12dp">
-        
+        android:layout_gravity="center|top"
+        app:cardCornerRadius="6dp"
+        android:elevation="0dp">
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_no_image_lahan_terdekat"/>
 
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="69dp"
+        android:layout_gravity="center|bottom"
+        app:cardCornerRadius="6dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:padding="12dp"
             android:orientation="vertical">
 
             <TextView
@@ -56,15 +67,6 @@
                 android:textSize="9sp"
                 android:textColor="#828282"
                 android:text="Luas"/>
-
-<!--            <TextView-->
-<!--                android:id="@+id/textViewFasilitas"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/open_sans_regular"-->
-<!--                android:textSize="9sp"-->
-<!--                android:textColor="#828282"-->
-<!--                android:text="Fasilitas"/>-->
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -100,7 +102,7 @@
             </LinearLayout>
 
         </LinearLayout>
-        
-    </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

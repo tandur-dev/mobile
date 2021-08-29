@@ -43,6 +43,7 @@ import com.android.tandur.api.response.KecamatanResponse;
 import com.android.tandur.api.response.KelurahanRespone;
 import com.android.tandur.api.response.KotaKabupatenResponse;
 import com.android.tandur.api.response.ProvinsiResponse;
+import com.android.tandur.preference.AppPreference;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -148,6 +149,7 @@ public class SewakanLahanActivity extends AppCompatActivity implements Permissio
             }
         });
 
+        lokasi = "1";
         radioGroupLokasiLahan.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -211,16 +213,33 @@ public class SewakanLahanActivity extends AppCompatActivity implements Permissio
                 Intent intent = new Intent(v.getContext(), DetailSewakanLahanActivity.class);
                 intent.putExtra("NAMA_LAHAN", textInputEditTextNamaLahan.getText().toString());
                 intent.putExtra("ALAMAT", textInputEditTextAlamat.getText().toString());
-                intent.putExtra("ID_PROVINSI", idProvinsi);
-                intent.putExtra("ID_KOTA_KABUPATEN", idKotaKabupaten);
-                intent.putExtra("ID_KECAMATAN", idKecamatan);
-                intent.putExtra("ID_KELURAHAN", idKelurahan);
+                if (checkBoxAlamatLahanSamaDenganAlamatRumah.isChecked()) {
+                    intent.putExtra("ID_PROVINSI", "11");
+                    intent.putExtra("ID_KOTA_KABUPATEN", "1101");
+                    intent.putExtra("ID_KECAMATAN", "1101010");
+                    intent.putExtra("ID_KELURAHAN", "1101010001");
+                } else {
+                    intent.putExtra("ID_PROVINSI", idProvinsi);
+                    intent.putExtra("ID_KOTA_KABUPATEN", idKotaKabupaten);
+                    intent.putExtra("ID_KECAMATAN", idKecamatan);
+                    intent.putExtra("ID_KELURAHAN", idKelurahan);
+                }
                 intent.putExtra("LOKASI", lokasi);
-                intent.putExtra("NO_SERTIFIKAT", textInputEditTextNomorSertifikat.getText().toString());
-                intent.putExtra("NAMA_PEMILIK", textInputEditTextNamaPemilikSesuaiKTP.getText().toString());
-                intent.putExtra("KTP_PEMILIK", textInputEditTextNoKTP.getText().toString());
-                intent.putExtra("LONGITUDE", longitude);
-                intent.putExtra("LATITUDE", latitude);
+                intent.putExtra("NO_SERTIFIKAT", textInputEditTextNomorSertifikat.getText().toString().isEmpty() ? "-" : textInputEditTextNomorSertifikat.getText().toString());
+                if (checkBoxSamakanDenganKTP.isChecked()) {
+                    intent.putExtra("NAMA_PEMILIK", AppPreference.getUser(SewakanLahanActivity.this).namaUser);
+                    intent.putExtra("KTP_PEMILIK", "-");
+                } else {
+                    intent.putExtra("NAMA_PEMILIK", textInputEditTextNamaPemilikSesuaiKTP.getText().toString());
+                    intent.putExtra("KTP_PEMILIK", textInputEditTextNoKTP.getText().toString());
+                }
+                if (longitude != null && latitude != null) {
+                    intent.putExtra("LONGITUDE", longitude.isEmpty() ? "-" : longitude);
+                    intent.putExtra("LATITUDE", latitude.isEmpty() ? "-" : latitude);
+                } else {
+                    intent.putExtra("LONGITUDE", "-");
+                    intent.putExtra("LATITUDE", "-");
+                }
                 intent.putExtra("IMG1", uri1.toString());
                 intent.putExtra("IMG2", uri2.toString());
                 startActivity(intent);

@@ -175,6 +175,12 @@ public class DetailSewakanLahanActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     if (response.body().status) {
                         postFotoLahan(response.body().idLahan);
+                        if (FotoLahanAdapter.getList().isEmpty()) {
+                            if (progressDialog.isShowing()) {
+                                progressDialog.dismiss();
+                            }
+                            startActivity(new Intent(DetailSewakanLahanActivity.this, KonfirmasiSewakanLahanActivity.class));
+                        }
                     }
                 }
             }

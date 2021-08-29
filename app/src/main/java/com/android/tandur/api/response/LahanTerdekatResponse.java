@@ -33,6 +33,21 @@ public class LahanTerdekatResponse extends BaseResponse {
         @SerializedName("ALAMAT_LAHAN")
         public String alamatLahan;
 
+        @SerializedName("HARGA_LAHAN")
+        public String hargaLahan;
+
+        @SerializedName("FOTO1_LAHAN")
+        public String foto1Lahan;
+
+        @SerializedName("PANJANG_LAHAN")
+        public String panjangLahan;
+
+        @SerializedName("LEBAR_LAHAN")
+        public String lebarLahan;
+
+        @SerializedName("BINTANG_LAHAN")
+        public String bintangLahan;
+
         @SerializedName("LATITUDE_LAHAN")
         public double latitudeLahan;
 

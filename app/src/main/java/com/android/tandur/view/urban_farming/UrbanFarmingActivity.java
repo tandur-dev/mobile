@@ -62,6 +62,8 @@ public class UrbanFarmingActivity extends AppCompatActivity implements
     private static final long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
     private static final long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 5;
 
+    private boolean cek = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -298,7 +300,10 @@ public class UrbanFarmingActivity extends AppCompatActivity implements
                                 .position(new LatLng(model.latitudeLahan, model.longitudeLahan))
                                 .title(model.namaLahan));
                     }
-                    recyclerViewLahanTerdekat.setAdapter(new LahanTerdekatAdapter(lahanTerdekatResponse.data));
+                    if (!cek) {
+                        recyclerViewLahanTerdekat.setAdapter(new LahanTerdekatAdapter(lahanTerdekatResponse.data));
+                        cek = true;
+                    }
                 }
             }
 

@@ -31,6 +31,7 @@
                 android:background="@android:color/white">
                 
                 <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="120dp"
                     android:layout_height="88dp"
                     android:adjustViewBounds="true"
@@ -54,7 +55,7 @@
                         android:text="Nama Lahan"/>
 
                     <TextView
-                        android:id="@+id/textViewHarga"
+                        android:id="@+id/textViewHargaLahan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -64,7 +65,7 @@
                         android:text="Harga"/>
 
                     <TextView
-                        android:id="@+id/textViewLuas"
+                        android:id="@+id/textViewLuasLahan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -73,14 +74,38 @@
                         android:textColor="#828282"
                         android:text="Luas"/>
 
-                    <TextView
-                        android:id="@+id/textViewFasilitas"
-                        android:layout_width="match_parent"
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_regular"
-                        android:textSize="9sp"
-                        android:textColor="#828282"
-                        android:text="Fasilitas"/>
+                        android:layout_marginTop="9dp"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:max="5"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_round_location"/>
+
+                        <TextView
+                            android:id="@+id/textViewKelurahan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:textSize="12sp"
+                            android:textColor="#828282"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:text="Kelurahan"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
                 

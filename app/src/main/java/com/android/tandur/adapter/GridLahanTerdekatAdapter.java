@@ -18,17 +18,17 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class LahanTerdekatAdapter extends RecyclerView.Adapter<LahanTerdekatAdapter.ViewHolder> {
+public class GridLahanTerdekatAdapter extends RecyclerView.Adapter<GridLahanTerdekatAdapter.ViewHolder> {
     private List<LahanTerdekatResponse.LahanTerdekatModel> list;
 
-    public LahanTerdekatAdapter(List<LahanTerdekatResponse.LahanTerdekatModel> list) {
+    public GridLahanTerdekatAdapter(List<LahanTerdekatResponse.LahanTerdekatModel> list) {
         this.list = list;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lahan_terdekat, parent, false));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lahan, parent, false));
     }
 
     @Override
@@ -56,6 +56,7 @@ public class LahanTerdekatAdapter extends RecyclerView.Adapter<LahanTerdekatAdap
         private RatingBar ratingBar;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             imageView = itemView.findViewById(R.id.imageView);
             textViewNamaLahan = itemView.findViewById(R.id.textViewNamaLahan);
             textViewHargaLahan = itemView.findViewById(R.id.textViewHargaLahan);
